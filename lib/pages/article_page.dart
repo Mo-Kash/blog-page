@@ -47,13 +47,18 @@ class ArticlePage extends StatelessWidget {
                 )
             ),
             const SizedBox(height: 8),
-            Text("By ${article.author} • ${article.readTime} read", style: TextStyle(color: Colors.grey)),
+            Text(
+                "By ${article.author} • ${article.readTime} read",
+                textScaler: TextScaler.noScaling,
+                style: TextStyle(color: Colors.grey)),
             const SizedBox(height: 8),
             Wrap(
               spacing: 6,
               children: article.tags
                   .map((tag) =>  Chip(
-                label: Text(tag,
+                label: Text(
+                    tag,
+                    textScaler: TextScaler.noScaling,
                     style: TextStyle(
                         fontSize: 12,
                         fontStyle: FontStyle.italic,

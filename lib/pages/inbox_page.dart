@@ -14,7 +14,10 @@ class InboxPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         scrolledUnderElevation: 0,
-        title: const Text("Inbox"),
+        title: const Text(
+            "Inbox",
+            textScaler: TextScaler.noScaling
+        ),
         centerTitle: true,
         elevation: 0,
       ),

@@ -28,30 +28,41 @@ class ArticleThumbnail extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("${article.date} • ${article.readTime}",
+                  Text(
+                      "${article.date} • ${article.readTime}",
+                      textScaler: TextScaler.noScaling,
                       style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
-                          fontSize: 12)),
+                          fontSize: 12
+                      )
+                  ),
                   const SizedBox(height: 4),
                   Text(
                       article.title,
+                      textScaler: TextScaler.noScaling,
                       style: TextStyle(
                           color: Theme.of(context).colorScheme.inversePrimary,
                           fontSize: 16,
-                          fontWeight: FontWeight.bold)),
+                          fontWeight: FontWeight.bold
+                      )
+                  ),
                   const SizedBox(height: 4),
                   Text(
                       article.preview,
+                      textScaler: TextScaler.noScaling,
                       style:
                       TextStyle(color: Theme.of(context).colorScheme.primary),
                       maxLines: 2,
-                      overflow: TextOverflow.ellipsis),
+                      overflow: TextOverflow.ellipsis
+                  ),
                   const SizedBox(height: 8),
                   Wrap(
                     spacing: 6,
                     children: article.tags
                         .map((tag) =>  Chip(
-                        label: Text(tag,
+                        label: Text(
+                            tag,
+                            textScaler: TextScaler.noScaling,
                             style: TextStyle(
                                 fontSize: 12,
                                 fontStyle: FontStyle.italic,
