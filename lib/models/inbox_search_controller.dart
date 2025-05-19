@@ -10,10 +10,7 @@ class InboxSearchController extends GetxController{
   void handleSearch(String query) {
     final lowerQuery = query.toLowerCase();
     final results = StoredArticles.articles.where((article) {
-      return article.title.toLowerCase().contains(lowerQuery) ||
-          article.sections.any((section) =>
-              section.paragraphs.any((para) =>
-                  para.lines.any((line) => line.toLowerCase().contains(lowerQuery))));
+      return article.title.toLowerCase().contains(lowerQuery);
     }).toList();
     filteredArticles.assignAll(results);
   }

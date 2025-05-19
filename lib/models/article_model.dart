@@ -34,15 +34,28 @@ class ArticleSection {
   });
 }
 
-class ParagraphBlock {
+abstract class ParagraphBlock {}
+
+class TextBlock extends ParagraphBlock {
   final String title;
   final List<String> lines;
 
-  ParagraphBlock({
+  TextBlock({
     this.title = '',
     required this.lines,
   });
 }
+
+class TableBlock extends ParagraphBlock {
+  final List<String> headers;
+  final List<List<String>> rows;
+
+  TableBlock({
+    required this.headers,
+    required this.rows,
+  });
+}
+
 
 class ArticleConclusion {
   final String title;
