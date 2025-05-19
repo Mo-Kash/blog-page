@@ -604,19 +604,23 @@ class StoredArticles {
                   "3. Navtara Analysis",
                   "Definition: The Navtara Chakra divides the 27 Nakshatras into nine groups (Taras) from the Moon’s birth Nakshatra.",
                 ]),
-                TextBlock(lines: [
-                  "How to Interpret the Navtara Chakra in Your Birth Chart",
-                  "The Navtara Chakra is a powerful tool in Vedic astrology that divides the 27 Nakshatras (lunar mansions) into nine groups of three, starting from your Janma Nakshatra (birth star). Each group, or Tara, has a specific meaning and influence on your life, personality, and experiences. Here’s how to interpret it step by step:",
-                  "1. Identify Your Janma Nakshatra",
-                  "Your Janma Nakshatra is the Nakshatra where your natal Moon is placed at birth.",
-                  "This Nakshatra becomes the starting point for the Navtara Chakra calculation.",
                 ]),
-                TextBlock(lines: [
-                  "2. Calculate the Navtara Sequence",
-                  "Starting from your Janma Nakshatra, count sequentially through the 27 Nakshatras to form nine Taras, each containing three Nakshatras.",
-                  "The sequence is cyclical (after the 27th Nakshatra, continue counting from the 1st).",
-                ]),
-              ]),
+                ArticleSection(
+                  heading: "How to Interpret the Navtara Chakra in Your Birth Chart",
+                  paragraphs: [
+                    TextBlock(lines: [
+                      "The Navtara Chakra is a powerful tool in Vedic astrology that divides the 27 Nakshatras (lunar mansions) into nine groups of three, starting from your Janma Nakshatra (birth star). Each group, or Tara, has a specific meaning and influence on your life, personality, and experiences. Here’s how to interpret it step by step:",
+                      "1. Identify Your Janma Nakshatra",
+                      "Your Janma Nakshatra is the Nakshatra where your natal Moon is placed at birth.",
+                      "This Nakshatra becomes the starting point for the Navtara Chakra calculation.",
+                    ]),
+                    TextBlock(lines: [
+                      "2. Calculate the Navtara Sequence",
+                      "Starting from your Janma Nakshatra, count sequentially through the 27 Nakshatras to form nine Taras, each containing three Nakshatras.",
+                      "The sequence is cyclical (after the 27th Nakshatra, continue counting from the 1st).",
+                    ]),
+                  ]
+                ),
               ArticleSection(
                   heading: "Navtara Categories and Their Significance",
                   paragraphs: [
@@ -720,93 +724,108 @@ class StoredArticles {
         sections: [
           ArticleSection(
               heading: "🕒 Hora: Hourly Planetary Guidance in Vedic Astrology",
+              paragraphs: []
+          ),
+          ArticleSection(
+            heading:"Definition",
+            paragraphs: [TextBlock(lines: ["Hora is a core Vedic astrology system that divides each day and night into 24 planetary hours, each ruled by a specific planet. This division is not just theoretical-it is a practical timing tool for aligning your actions with the prevailing planetary energies, thus optimizing outcomes for various activities throughout the day.",
+            ])]
+          ),
+          ArticleSection(
+            heading: "Why Hora Works for Hourly Guidance",
+            paragraphs: [
+              TextBlock(lines: [
+              "Focused Energy: Each planetary hour channels the specific energy of its ruler, making certain actions more likely to succeed if performed during the matching Hora.",
+              "Flexibility: Since Horas shift daily with sunrise and sunset, this method adapts to seasonal and geographic changes.",
+              "Accessible: Anyone can use a Hora table or app to plan their day for better outcomes.",
+              ])]
+          ),
+          ArticleSection(
+            heading: "Vedic astrology’s daily guidance is rooted in a multi-layered, algorithmic process:",
+            paragraphs: [
+              TextBlock(lines: [
+                "It starts with precise birth chart calculation.",
+                "It incorporates advanced techniques like Navtara Chakra, planetary aspects, and Dasha periods.",
+                "It tracks real-time planetary transits and assigns planetary rulers to each hour (Hora) for micro-level timing.",
+                "The Day Lord for each weekday sets the tone, with the Hora system providing further nuance for every hour.",
+              ])]
+          ),
+          ArticleSection(
+            heading:  "How Hora Is Calculated",
+            paragraphs: [
+              TextBlock(lines: [
+                "Daytime (Dina Hora):",
+                "The time from sunrise to sunset is divided into 12 equal parts. Each part is a Hora (planetary hour).",
+                "Nighttime (Ratri Hora):",
+                "The time from sunset to the next sunrise is also divided into 12 equal Horas.",
+                "Duration:",
+                "The length of each Hora varies with the season and location. In summer, daytime Horas are longer; in winter, night time Horas are longer",
+              ]),
+            ]
+          ),
+          ArticleSection(
+            heading: "Assigning Planetary Rulers to Each Hora",
+            paragraphs: [
+            TextBlock(lines: [
+              "The first Hora of each day is ruled by the planet that governs that weekday (the Day Lord).",
+              "Sunday: Sun",
+              "Monday: Moon",
+              "Tuesday: Mars",
+              "Wednesday: Mercury",
+              "Thursday: Jupiter",
+              "Friday: Venus",
+              "Saturday: Saturn",
+              "The sequence for subsequent Horas follows a fixed Chaldean order:",
+              "Sun → Venus → Mercury → Moon → Saturn → Jupiter → Mars",
+              "(Then repeat the sequence.)",
+              "Example:",
+              "Want to negotiate a contract? Choose Mercury Hora.",
+              "Planning a romantic date? Venus Hora is ideal.",
+              "Need to deal with authorities? Use Sun Hora.",
+            ]),
+            ]
+          ),
+          ArticleSection(
+            heading: "Day Lords: Planetary Rulers of Each Day",
+            paragraphs: [
+              TableBlock(
+                headers: ["Day", "Sanskrit Name", "Planetary Lord", "Key Energies"],
+                rows: [
+                  ["Sunday", "Ravivara", "Sun (Surya)", "Vitality, leadership, creativity, self-expression"],
+                  ["Monday", "Somavara", "Moon (Chandra)", "Emotions, intuition, nurturing, mental well-being"],
+                  ["Tuesday", "Mangalavara", "Mars (Mangal)", "Courage, action, strength, determination"],
+                  ["Wednesday", "Budhavara", "Mercury (Budh)", "Communication, intelligence, adaptability"],
+                  ["Thursday", "Guruvara", "Jupiter (Guru)", "Wisdom, spirituality, knowledge, prosperity"],
+                  ["Friday", "Shukravara", "Venus (Shukra)", "Love, beauty, harmony, luxury"],
+                  ["Saturday", "Shanivara", "Saturn (Shani)", "Discipline, responsibility, hard work, karma"],
+                ],
+              )
+            ],
+          ),
+          ArticleSection(
+              heading: "Technical Application",
               paragraphs: [
                 TextBlock(lines: [
-                  "Definition",
-                  "Hora is a core Vedic astrology system that divides each day and night into 24 planetary hours, each ruled by a specific planet. This division is not just theoretical-it is a practical timing tool for aligning your actions with the prevailing planetary energies, thus optimizing outcomes for various activities throughout the day.",
+                  "Technical Application",
+                  "Activity Optimization: Each Hora is suited for specific tasks based on the ruling planet’s qualities (e.g., Sun Hora for leadership, Moon Hora for nurturing).",
+                  "Algorithmic Calculation: Modern apps use sunrise/sunset data and Chaldean order to assign planetary rulers to each segment, starting with the Day Lord.",
                 ]),
                 TextBlock(lines: [
-                  "Why Hora Works for Hourly Guidance",
-                  "Focused Energy: Each planetary hour channels the specific energy of its ruler, making certain actions more likely to succeed if performed during the matching Hora.",
-                  "Flexibility: Since Horas shift daily with sunrise and sunset, this method adapts to seasonal and geographic changes.",
-                  "Accessible: Anyone can use a Hora table or app to plan their day for better outcomes.",
+                  "This structured methodology ensures that every aspect of time is mapped, analyzed, and aligned with cosmic principles for optimal living and decision-making.",
                 ]),
                 TextBlock(lines: [
-                  "Vedic astrology’s daily guidance is rooted in a multi-layered, algorithmic process:",
-                  "It starts with precise birth chart calculation.",
-                  "It incorporates advanced techniques like Navtara Chakra, planetary aspects, and Dasha periods.",
-                  "It tracks real-time planetary transits and assigns planetary rulers to each hour (Hora) for micro-level timing.",
-                  "The Day Lord for each weekday sets the tone, with the Hora system providing further nuance for every hour.",
+                  "1. Constructing a Hora Table",
+                  "Look up your local sunrise and sunset times.",
+                  "Divide the day and night into 12 equal segments each.",
+                  "Assign planetary rulers as per the sequence, starting with the Day Lord for the first Hora after sunrise.",
                 ]),
                 TextBlock(lines: [
-                  "How Hora Is Calculated",
-                  "Daytime (Dina Hora):",
-                  "The time from sunrise to sunset is divided into 12 equal parts. Each part is a Hora (planetary hour).",
-                  "Nighttime (Ratri Hora):",
-                  "The time from sunset to the next sunrise is also divided into 12 equal Horas.",
-                  "Duration:",
-                  "The length of each Hora varies with the season and location. In summer, daytime Horas are longer; in winter, night time Horas are longer",
+                  "2. Personalized Use",
+                  "For even more precision, match the Hora not just to the activity, but also to your own birth chart (e.g., avoid Mars Hora if Mars is weak or afflicted in your chart).",
+                  "Some advanced practitioners also consider the Hora Lagna (the Ascendant at the start of a Hora) for micro-level timing3.",
                 ]),
-                TextBlock(lines: [
-                  "Assigning Planetary Rulers to Each Hora",
-                  "The first Hora of each day is ruled by the planet that governs that weekday (the Day Lord).",
-                  "Sunday: Sun",
-                  "Monday: Moon",
-                  "Tuesday: Mars",
-                  "Wednesday: Mercury",
-                  "Thursday: Jupiter",
-                  "Friday: Venus",
-                  "Saturday: Saturn",
-                  "The sequence for subsequent Horas follows a fixed Chaldean order:",
-                  "Sun → Venus → Mercury → Moon → Saturn → Jupiter → Mars",
-                  "(Then repeat the sequence.)",
-                  "Example:",
-                  "Want to negotiate a contract? Choose Mercury Hora.",
-                  "Planning a romantic date? Venus Hora is ideal.",
-                  "Need to deal with authorities? Use Sun Hora.",
-                ]),
-              ]),
-              ArticleSection(
-                heading: "Day Lords: Planetary Rulers of Each Day",
-                paragraphs: [
-                  TableBlock(
-                    headers: ["Day", "Sanskrit Name", "Planetary Lord", "Key Energies"],
-                    rows: [
-                      ["Sunday", "Ravivara", "Sun (Surya)", "Vitality, leadership, creativity, self-expression"],
-                      ["Monday", "Somavara", "Moon (Chandra)", "Emotions, intuition, nurturing, mental well-being"],
-                      ["Tuesday", "Mangalavara", "Mars (Mangal)", "Courage, action, strength, determination"],
-                      ["Wednesday", "Budhavara", "Mercury (Budh)", "Communication, intelligence, adaptability"],
-                      ["Thursday", "Guruvara", "Jupiter (Guru)", "Wisdom, spirituality, knowledge, prosperity"],
-                      ["Friday", "Shukravara", "Venus (Shukra)", "Love, beauty, harmony, luxury"],
-                      ["Saturday", "Shanivara", "Saturn (Shani)", "Discipline, responsibility, hard work, karma"],
-                    ],
-                  )
-                ],
-              ),
-              ArticleSection(
-                  heading: "Technical Application",
-                  paragraphs: [
-                    TextBlock(lines: [
-                      "Technical Application",
-                      "Activity Optimization: Each Hora is suited for specific tasks based on the ruling planet’s qualities (e.g., Sun Hora for leadership, Moon Hora for nurturing).",
-                      "Algorithmic Calculation: Modern apps use sunrise/sunset data and Chaldean order to assign planetary rulers to each segment, starting with the Day Lord.",
-                    ]),
-                    TextBlock(lines: [
-                      "This structured methodology ensures that every aspect of time is mapped, analyzed, and aligned with cosmic principles for optimal living and decision-making.",
-                    ]),
-                    TextBlock(lines: [
-                      "1. Constructing a Hora Table",
-                      "Look up your local sunrise and sunset times.",
-                      "Divide the day and night into 12 equal segments each.",
-                      "Assign planetary rulers as per the sequence, starting with the Day Lord for the first Hora after sunrise.",
-                    ]),
-                    TextBlock(lines: [
-                      "2. Personalized Use",
-                      "For even more precision, match the Hora not just to the activity, but also to your own birth chart (e.g., avoid Mars Hora if Mars is weak or afflicted in your chart).",
-                      "Some advanced practitioners also consider the Hora Lagna (the Ascendant at the start of a Hora) for micro-level timing3.",
-                    ]),
-                  ]
-              )
+              ]
+          )
         ],
         conclusion: ArticleConclusion(title: "Summary", points: [
           "Hora provides a structured, algorithmic approach to hourly guidance in Vedic astrology. By aligning your actions with the ruling planet of each hour, you can maximize the effectiveness of your efforts-whether in career, relationships, finances, or personal well-being. This system transforms each day into a sequence of energetic windows, each suited for specific types of activities, and is a practical way to bring Vedic astrology into your daily routine",
